@@ -38,5 +38,12 @@
     </div>
   </div>
 
+{% if exception_occurred %}
+    <script>
+        window.onload = function() {
+            alert("City information is not available to Weather API");
+        }
+    </script>
+{% endif %}
 </body>
 </html>
